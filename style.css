@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'silkscreen_expandednormal';
+    src: url('slkscre-webfont.woff2') format('woff2'),
+         url('bahan/slkscre-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: black;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 17, 53);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    
+  }
+html,body{
+    font-family:silkscreen_expandednormal ;
+
+}
+.pusat{
+    background-image: url(bahan/Nightly\ Training\ by\ kirokaze\ on\ DeviantArt.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+ width: 100%;
+ height: 90vh;
+}
+.welcome{
+    color: yellow;
+    margin-left: 70px;
+    font-size: 55px;
+    padding-top: 100px;
+}
+.btn{
+    border-radius: 25px;
+    background-color: rgb(241, 52, 52);
+    margin-left: 70px;
+    color:yellow;
+    margin-top: 30px;
+}
+.container-fluid{ background: black;color: white;}
+.title{text-align: center; font-size: 40px; padding-top: 40px;}
+.new1{border:3px solid white; border-radius: 100px;}
+
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: 14px;
+  background: #d13639;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 3s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: px -3px;
+  background: yellow;
+  border-radius: 4px;
+  font-size: 22px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.footer{height: auto;}
+.bottom{color: yellow;
+text-decoration: none;
+margin-top: 30px;
+padding-top:5px ;
+box-sizing: border-box;
+font-size: 20px;
+}
+.bottom:hover{color: white;}
+.col-3{
+    color: yellow;
+}
+.copyright{
+    height: 5vh;
+    width: 100%;
+    color: #fffbfb;
+    text-align: center;
+    font-size: 20px;
+}
